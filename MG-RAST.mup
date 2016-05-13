@@ -1,0 +1,230 @@
+{
+  "title": "MG-RAST",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "API",
+      "id": 2,
+      "ideas": {
+        "1": {
+          "title": "sample",
+          "id": 23,
+          "ideas": {
+            "2": {
+              "title": "annotation",
+              "id": 36,
+              "ideas": {
+                "1": {
+                  "title": "http://api.metagenomics.anl.gov/1/annotation/sequence/mgm4440036.3?type=function&filter=protease&source=Subsystems",
+                  "id": 24,
+                  "ideas": {
+                    "1": {
+                      "title": "output",
+                      "id": 31,
+                      "ideas": {
+                        "1": {
+                          "title": "sequence id\tm5nr id (md5sum)\tdna sequence\tsemicolon separated list of annotations\n\nmgm4440036.3|5079086\t02f5a5ecb261e0d3684bbfa2e4e8eb2f\tAGAAGACTTTCTAGATTAGCTGAGGCACCTTTCATAAAAGTTGAAGCAACAAGATTTACTGAGGTTGGGTACGTAGGTAGAGATGTTGAACAAATAGTGAGAGATTTG\tATP-dependent hsl protease ATP-binding subunit HslU;ATP-dependent hsl protease ATP-binding subunit HslU",
+                          "id": 32
+                        },
+                        "2": {
+                          "title": "we cant extract sequence by m5nr api",
+                          "id": 34
+                        }
+                      },
+                      "attr": {
+                        "style": {},
+                        "collapsed": true
+                      }
+                    }
+                  },
+                  "attr": {
+                    "style": {}
+                  }
+                }
+              }
+            },
+            "3": {
+              "title": "m5nr - sequence",
+              "id": 38,
+              "ideas": {
+                "1": {
+                  "title": "http://api.metagenomics.anl.gov/1/m5nr/sequence/MAGENHQWQGSIL?source=TrEMBL",
+                  "id": 40,
+                  "ideas": {
+                    "1": {
+                      "title": "output",
+                      "id": 41,
+                      "ideas": {
+                        "1": {
+                          "title": "{\"limit\":10,\"offset\":0,\"prev\":null,\"version\":\"10\",\"next\":null,\"url\":\"http://api.metagenomics.anl.gov/1/m5nr/sequence/MAGENHQWQGSIL?source=TrEMBL&offset=0\",\"total_count\":1,\"data\":[{\"source\":\"TrEMBL\",\"organism\":\"Homo sapiens (Human)\",\"alias\":[\"EMBL:S79548\",\"IPI:IPI00646717\",\"UniGene:Hs.268490\"],\"ncbi_tax_id\":0,\"accession\":\"Q16392\",\"type\":\"protein\",\"function\":\"DAX-1 protein\",\"md5\":\"97aabcca3e90254728cac138f1d9258b\"}]}",
+                          "id": 43
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true,
+                        "style": {}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "manual: http://api.metagenomics.anl.gov/api.html",
+          "id": 25,
+          "ideas": {
+            "1": {
+              "title": "source",
+              "id": 26,
+              "ideas": {
+                "1": {
+                  "title": "RefSeq - protein database, type organism, function, feature\nGenBank - protein database, type organism, function, feature\nIMG - protein database, type organism, function, feature\nSEED - protein database, type organism, function, feature\nTrEMBL - protein database, type organism, function, feature\nSwissProt - protein database, type organism, function, feature\nPATRIC - protein database, type organism, function, feature\nKEGG - protein database, type organism, function, feature\nRDP - RNA database, type organism, function, feature\nGreengenes - RNA database, type organism, function, feature\nLSU - RNA database, type organism, function, feature\nSSU - RNA database, type organism, function, feature\nSubsystems - ontology database, type ontology only\nNOG - ontology database, type ontology only\nCOG - ontology database, type ontology only\nKO - ontology database, type ontology only",
+                  "id": 27,
+                  "attr": {
+                    "style": {}
+                  }
+                }
+              },
+              "attr": {
+                "style": {},
+                "collapsed": true
+              }
+            },
+            "2": {
+              "title": "type",
+              "id": 28,
+              "ideas": {
+                "1": {
+                  "title": "organism - return organism datafunction - return function dataontology - return ontology datafeature - return feature datamd5 - return md5sum data",
+                  "id": 30,
+                  "attr": {
+                    "style": {}
+                  }
+                }
+              },
+              "attr": {
+                "style": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "11": {
+      "title": "FILES",
+      "id": 3,
+      "ideas": {
+        "1": {
+          "title": "050",
+          "id": 4
+        },
+        "2": {
+          "title": "100",
+          "id": 5
+        },
+        "3": {
+          "title": "150",
+          "id": 7
+        },
+        "4": {
+          "title": "350",
+          "id": 8,
+          "ideas": {
+            "1": {
+              "title": "genecalling",
+              "id": 11
+            },
+            "2": {
+              "title": "> name\nAGCATCGACTACGACTAC\n",
+              "id": 12
+            },
+            "3": {
+              "title": "how did they call gene?",
+              "id": 35,
+              "attr": {
+                "style": {
+                  "background": "#ff0000"
+                }
+              }
+            }
+          }
+        },
+        "5": {
+          "title": "550",
+          "id": 9
+        },
+        "6": {
+          "title": "650",
+          "id": 10,
+          "ideas": {
+            "1": {
+              "title": "protein sims",
+              "id": 14
+            },
+            "2": {
+              "title": "11 columns",
+              "id": 15,
+              "ideas": {
+                "1": {
+                  "title": "1. aa90_100164",
+                  "id": 16
+                },
+                "2": {
+                  "title": "2. md5sum",
+                  "id": 17,
+                  "ideas": {
+                    "1": {
+                      "title": "http://api.metagenomics.anl.gov/m5nr/md5/000821a2e2f63df1a3873e4b280002a8",
+                      "id": 19,
+                      "attr": {
+                        "style": {}
+                      },
+                      "ideas": {
+                        "1": {
+                          "title": "(organism, type, function)xN",
+                          "id": 20,
+                          "attr": {
+                            "style": {}
+                          }
+                        },
+                        "2": {
+                          "title": "sequence?",
+                          "id": 21
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "links": [
+    {
+      "ideaIdFrom": 2,
+      "ideaIdTo": 19,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 34,
+      "ideaIdTo": 21,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    }
+  ]
+}
